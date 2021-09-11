@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>timer</title>
+</head>
+<body>
+    <style>
+        body {
+            margin: 35px;
+        }
+        h1 {
+            font-size: 60px;
+        }
+    </style>
+    
+    <audio
+        id="audio-player"
+        controls
+        src="/music/love_foolish.mp3">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>
+    <p>song:</p>
+    <input type="text" id="song" name="song" value="love_foolish.mp3">
+    <br>
+    <br>
+    <p>number of minutes:</p>
+    <input type="number" id="duration" name="duration"
+       min="0" max="600" value="60">
+    <button class="btn btn-success" id="start-timer">start timer</button>
+    <h1 id="label">0 Seconds Remaining</h1>
+    <script src="/script.js"></script>
+</body>
+</html>
