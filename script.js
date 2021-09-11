@@ -5,7 +5,7 @@ document.getElementById("start-timer").onclick = () => {
     let duration = document.getElementById("duration").value 
     let song = document.getElementById("song").value 
 
-    audioPlayer.src = "/music/" + song
+    audioPlayer.src = "/" + song
     document.title = "active timer - " + song
     let seconds = duration * 60;
     let future = new Date().getTime() + (duration * 1000 * 60)
