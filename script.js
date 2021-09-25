@@ -4,6 +4,7 @@ const storedSong = localStorage.getItem("song")
 
 if (storedSong !== null) {
     document.getElementById("song").value = storedSong;
+    audioPlayer.src = "/my-timer/" + storedSong;
 }
 
 document.getElementById("start-timer").onclick = () => {
