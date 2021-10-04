@@ -73,6 +73,9 @@ function startTimer() {
         document.title = "timer" 
         document.getElementById("label").innerHTML = "0 hrs : 0 min : 0 sec"
         document.removeEventListener("visibilitychange", on)
+        button.className = "btn btn-success"
+        button.innerHTML = "start timer"
+        button.onclick = startTimer
     }, duration * 1000 * 60);
 
     // button logic
